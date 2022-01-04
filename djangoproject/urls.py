@@ -26,10 +26,10 @@ from inventory import views
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('', admin.site.urls),
     path('test',views.checkuser),
     path('registeruser',views.register),
-    path('',views.insertdata),
+    path('test',views.insertdata),
     path('viewcustomer',views.viewcustomer),
     path('prod_del/<int:id>',views.delete),
     path('mycust',views.list),
