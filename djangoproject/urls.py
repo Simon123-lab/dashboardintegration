@@ -39,6 +39,6 @@ urlpatterns = [
     #path('customer',views.customer),
     #path('',include('inventory.urls'))
     #path('',views.checkuser),
-    *(r'^media/(?P<path>.*)$', serve,{'document_root': settings.MEDIA_ROOT}),
-    *(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}),
+    (r'^media/(?P<path>.*)$', serve,{'document_root': settings.MEDIA_ROOT}),
+    (r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}),
 ]
